@@ -66,7 +66,7 @@ const Boxes = () => {
     //for limited api
     const generate=async ()=>{
       try{
-        const response=await axios.get(`http://localhost:2000/getConverted`,{
+        const response=await axios.get(`https://currencyconverter-backend.onrender.com/getConverted`,{
           params:{
             sentAmount:sentAmount,
             fromCurrency:tochangeCurrency,
@@ -92,7 +92,7 @@ const Boxes = () => {
     //to generate based on input change too many apis (limited apis)
     // const inputChanged=async ()=>{
     //   try{
-    //     const response=await axios.get(`http://localhost:2000/getConverted`,{
+    //     const response=await axios.get(`https://currencyconverter-backend.onrender.com/getConverted`,{
     //       params:{
     //         from:from,
     //         to:to,
